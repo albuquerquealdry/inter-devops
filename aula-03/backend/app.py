@@ -10,11 +10,12 @@ psytrance_artists = [
     "Vini Vici",
     "Skazi",
     "Talamasca",
-    "Raja Ram",
     "Sesto Sento",
     "Captain Hook",
     "Ace Ventura",
-    "Bizarre Contact"
+    "Bizarre Contact",
+    "Mortem Grenal",
+    "Vegas"
 ]
 
 class ArtistResponse(BaseModel):

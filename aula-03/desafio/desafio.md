@@ -17,7 +17,7 @@ Aguarde até que o Docker baixe a imagem. Após a conclusão, use o comando `doc
 Agora que temos uma imagem, vamos criar um container interativo usando a imagem do nginx. Execute o comando abaixo:
 
 ```bash
-docker run  nginx
+docker run  -p 80 nginx
 ```
 
 Esse comando inicia um container com o nginx.

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Psytrance Artists</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Psytrance Legends</h1>
+    <div id="artist-list" class="artist-list"></div>
+  </div>
+
+  <script>
+    async function fetchArtists() { 
+      try {
+        const response = await fetch("http://localhost:8000/artists");
+        const artists = await response.json();
+        const artistList = document.getElementById("artist-list");
+
+        artists.forEach(artist => {
+          const artistDiv = document.createElement("div");
+          artistDiv.classList.add("artist-card");
+          artistDiv.innerHTML = `
+            <h2>${artist.name}</h2>
+            <p>${artist.country}</p>
+          `;
+          artistList.appendChild(artistDiv);
+        });
+      } catch (error) {
+        console.error("Error fetching artists:", error);
+      }
+    }
+
+    fetchArtists();
+  </script>
+</body>
+</html>
