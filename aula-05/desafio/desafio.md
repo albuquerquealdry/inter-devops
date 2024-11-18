@@ -1,7 +1,3 @@
-**Desafio: Gerador de Senhas Fortes**  
-Neste desafio, você criará um programa que gera senhas fortes e aleatórias com base nos critérios definidos pelo usuário.
-
----
 
 ### **Regras do Desafio**
 1. O programa deve perguntar ao usuário:
